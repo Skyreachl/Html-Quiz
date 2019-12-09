@@ -28,6 +28,10 @@ function loadstage(num) {
         question.innerHTML = "<h1 id='finaltxt'>Você acertou " + acertos + "/5 do quiz!</h1>";
         document.getElementById("finaltxt").style.fontSize = "50px";
         document.getElementById("finaltxt").style.textShadow = "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black";
+        loaded_opts[0].innerHTML = "";
+        loaded_opts[1].innerHTML = "";
+        loaded_opts[2].innerHTML = "";
+        loaded_opts[3].innerHTML = "";
     } else {
         image.src = imagenspr[num - 1];
         question.innerHTML = perguntas[num - 1];
